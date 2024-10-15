@@ -34,6 +34,8 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <NavLink to={'/products'} className="nav-link">Products</NavLink>
+                        </li> <li className="nav-item">
+                            <NavLink to={'/my-context'} className="nav-link">Context</NavLink>
                         </li>
                         <li className="nav-item">
                             <a href="#" className="nav-link" onClick={handelLogout}>Logout</a>

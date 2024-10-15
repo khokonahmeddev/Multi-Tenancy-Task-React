@@ -17,6 +17,7 @@ import {getToken} from "./utilities/token";
 import AddProduct from "./pages/product/AddProduct";
 import EditProduct from "./pages/product/EditProduct";
 import Register from "./pages/Auth/Register";
+import MyContext from "./pages/context/MyContext";
 
 const App = () => {
     let isAuthenticated = !!getToken();
@@ -36,6 +37,7 @@ const App = () => {
                     <Route path="/products" element={<PrivateRoute element={Product}/>}/>
                     <Route path="/add-product" element={<PrivateRoute element={AddProduct}/>}/>
                     <Route path="/edit-product/:id" element={<PrivateRoute element={EditProduct}/>}/>
+                    <Route path="/my-context" element={<PrivateRoute element={MyContext}/>}/>
                 </Routes>
             </div>
         </Router>);
